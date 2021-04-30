@@ -1,0 +1,42 @@
+.table-detail{
+ font-size: $--font-size-base;
+ color: $--color-primary;
+ cursor: pointer;
+}
+.table-detail-special{
+  padding-right: $padding-md;
+}
+.topbar-btn{
+  margin-bottom: $padding-md;
+}
+.select-width{ // select & time组件的宽度
+  width: 100%;
+}
+
+// el-input为type=number是无箭头
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+.el-dialog__body {
+  max-height: 400px;
+  overflow: auto;
+}
+
+// 下拉框选项样式
+.erp-option-left{
+  float: left
+}
+.erp-option-right{
+  float: right; color: #8492a6; font-size: 13px
+}
+
+.el-input-number {
+  .el-input__inner {
+    text-align: left;
+  }
+}

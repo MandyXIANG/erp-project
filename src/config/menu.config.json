@@ -1,0 +1,306 @@
+[
+  {
+    "name": "待办事项",
+    "icon": "iconfont icondaibanshixiang1",
+    "path": "/main"
+  },
+  {
+    "name": "库存信息",
+    "icon": "iconfont iconkucun",
+    "path": "/main/inventoryList",
+    "permission": "inventory_manage_read"
+  },
+  {
+    "name": "基础模块",
+    "icon": "iconfont iconjichu",
+    "path": "基础模块",
+    "children": [
+      {
+        "name": "物料管理",
+        "icon": "iconfont iconwuliaoguanli1",
+        "path": "/main/materialList",
+        "permission": "material_manage_read"
+      },
+      {
+        "name": "物料组管理",
+        "icon": "iconfont iconicon-p_wuliaozu",
+        "path": "/main/groupList",
+        "permission": "material_group_manage_read"
+      },
+      {
+        "name": "客户管理",
+        "icon": "iconfont iconkehu",
+        "path": "/main/customer",
+        "permission": "customer_manage_read"
+      },
+      {
+        "name": "供应商管理",
+        "icon": "iconfont icongongyingshangguanli1",
+        "path": "/main/supplier",
+        "permission": "supplier_manage_read"
+      },
+      {
+        "name": "供应商物料管理",
+        "icon": "iconfont icongongyingshang",
+        "path": "/main/supplier-material",
+        "permission": "supplier_material_read"
+      },
+      {
+        "name": "联系人管理",
+        "icon": "iconfont iconlianxirenguanli",
+        "path": "/main/contactList",
+        "permission": "contact_manager_read"
+      },
+      {
+        "name": "仓库管理",
+        "icon": "iconfont iconcangku1",
+        "path": "/main/warehouse",
+        "permission": "warehouse_read"
+      },
+      {
+        "name": "料盒管理",
+        "icon": "iconfont iconfahuo",
+        "path": "料盒管理",
+        "hidden": true
+      },
+      {
+        "name": "HS编码",
+        "icon": "iconfont iconHSbianma",
+        "path": "/main/hsList",
+        "permission": "hs_manager_read"
+      },
+      {
+        "name": "单位管理",
+        "icon": "iconfont iconjiliangdanwei",
+        "path": "/main/unit",
+        "permission": "read_unit"
+      }
+    ]
+  },
+  {
+    "name": "业务模块",
+    "icon": "iconfont iconyewulian",
+    "path": "业务模块",
+    "children": [
+      {
+        "name": "销售管理",
+        "icon": "iconfont icontubiao_dingdanguanli",
+        "path": "销售管理",
+        "children": [
+          {
+            "name": "销售基本信息",
+            "icon": "iconfont icondaishenhe1",
+            "path": "/main/sale-info",
+            "permission": "sale_info_read"
+          },
+          {
+            "name": "销售订单",
+            "icon": "iconfont iconxiaoshoudingdan1",
+            "path": "/main/sale-order",
+            "permission": "sale_order_read"
+          },
+          {
+            "name": "待审核",
+            "icon": "iconfont icondaishenhe1",
+            "path": "/main/sale-check",
+            "permission": "sale_check_read"
+          }
+        ]
+      },
+      {
+        "name": "请购清单",
+        "icon": "iconfont iconcaigoudingdan",
+        "path": "/main/request-list",
+        "permission": "request_list_read"
+      },
+      {
+        "name": "采购管理",
+        "icon": "iconfont iconicon-cart",
+        "path": "采购管理",
+        "children": [
+          {
+            "name": "采购基本信息",
+            "icon": "iconfont icondaishenhe1",
+            "path": "/main/purchase-info",
+            "hidden": true
+          },
+          {
+            "name": "采购查询",
+            "icon": "iconfont iconchaxun",
+            "path": "/main/purchase-search",
+            "permission": "purchase_order_search"
+          },
+          {
+            "name": "采购订单",
+            "icon": "iconfont iconcaigoudingdan-",
+            "path": "/main/purchase-order",
+            "permission": "purchase_order_read"
+          },
+          {
+            "name": "待审核",
+            "icon": "iconfont icondaishenhe1",
+            "path": "/main/purchase-wait-check",
+            "permission": "purchase_order_check_read"
+          }
+        ]
+      },
+      {
+        "name": "入库管理",
+        "icon": "iconfont iconruku1",
+        "path": "入库管理",
+        "children": [
+          {
+            "name": "收料单",
+            "icon": "iconfont iconrukuqingdan",
+            "path": "/main/stockin-receive-task",
+            "permission": "stockin_read_receipt_task"
+          },
+          {
+            "name": "待审核",
+            "icon": "iconfont icondaishenhe1",
+            "path": "/main/stockin-wait-check",
+            "permission": "stockin_read_wait_check"
+          },
+          {
+            "name": "收料",
+            "icon": "iconfont iconruku",
+            "path": "/main/stockin-material-receive",
+            "permission": "stockin_read_receipt"
+          },
+          {
+            "name": "存料",
+            "icon": "iconfont iconcaigouruku",
+            "path": "/main/stockin-material-stock-list",
+            "permission": "stockin_read_material_stock"
+          }
+        ]
+      },
+      {
+        "name": "出库管理",
+        "icon": "iconfont iconchuku",
+        "path": "出库管理",
+        "children": [
+          {
+            "name": "出库单",
+            "icon": "iconfont iconchukuchaxun",
+            "path": "/main/outbound-order",
+            "permission": "outbound_manage_read"
+          },
+          {
+            "name": "待审核",
+            "icon": "iconfont icondaishenhe1",
+            "path": "/main/wait-check",
+            "permission": "outbound_check_manage_read"
+          },
+          {
+            "name": "备料",
+            "icon": "iconfont iconweiwaibeiliaoyufaliao",
+            "path": "/main/prepare-material",
+            "permission": "prepare_manage_read"
+          },
+          {
+            "name": "发料",
+            "icon": "iconfont iconfahuo2",
+            "path": "/main/store-issue",
+            "permission": "outbound_read_store_issue"
+          }
+        ]
+      },
+      {
+        "name": "发货管理",
+        "icon": "iconfont iconfahuo1",
+        "path": "/main/deliver",
+        "permission": "deliver_manager_read"
+      },
+      {
+        "name": "盘点",
+        "icon": "iconfont iconpandian1",
+        "path": "盘点",
+        "hidden": true
+      },
+      {
+        "name": "退货申请",
+        "icon": "iconfont icontui",
+        "path": "退货申请",
+        "hidden": true
+      },
+      {
+        "name": "付款申请",
+        "icon": "iconfont iconfukuan2",
+        "path": "付款申请",
+        "hidden": true
+      },
+      {
+        "hidden": true,
+        "name": "发票申请",
+        "icon": "iconfont iconicon_xinyong_xianxing_jijin-",
+        "path": "发票申请"
+      },
+      {
+        "name": "财务管理",
+        "icon": "iconfont iconcaiwuguanli1",
+        "path": "财务管理",
+        "hidden": true,
+        "children": [
+          {
+            "name": "应收款单",
+            "icon": "iconfont iconshoukuan",
+            "path": "应收款单"
+          },
+          {
+            "name": "应付款单",
+            "icon": "iconfont icontubiao_fukuandan",
+            "path": "应付款单"
+          },
+          {
+            "name": "收款流水",
+            "icon": "iconfont iconcaiwuliushui",
+            "path": "收款流水"
+          },
+          {
+            "name": "付款流水",
+            "icon": "iconfont iconls",
+            "path": "付款流水"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "系统设置",
+    "icon": "iconfont iconxitong1",
+    "path": "系统设置",
+    "children": [
+      {
+        "name": "用户管理",
+        "icon": "iconfont iconyonghuguanli3",
+        "path": "/main/user",
+        "permission": "read_user"
+      },
+      {
+        "name": "角色管理",
+        "icon": "iconfont iconjiaoseguanli4",
+        "path": "/main/role",
+        "permission": "read_role"
+      },
+      {
+        "name": "权限管理",
+        "icon": "iconfont iconquanxian3",
+        "path": "/main/permission",
+        "permission": "read_permission"
+      },
+      {
+        "name": "枚举管理",
+        "icon": "iconfont iconmenu",
+        "path": "/main/enum",
+        "permission": "read_enum"
+      },
+      {
+        "name": "组织架构管理",
+        "icon": "iconfont iconzuzhijiagou",
+        "path": "/main/organization",
+        "permission": "read_organization"
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+// custom scss variable
+// vertical paddings
+$padding-lg: 24px; // containers
+$padding-md: 16px; // small containers and buttons
+$padding-sm: 12px; // Form controls and items
+$padding-xs: 8px; // small items
+
+// Font
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-base:14px;  
+
+// Color
+$black: #000;
+$body-background: #fff;// Background color for `<body>`
+$text-color: fade($black, 65%);
+$text-white: #fff;
+$border-detail-color:#ebeef5;
+$detail-hover-bg-color:#f5f7fa;
+$detail-label-color:#606266;
+$detail-value-color:#303133;
+$warnning-color:#FF8F18;
+
+
+// Border
+$border-color-base:#e8e8e8;
+$border-width-base: 1px;
+$border-style-base: solid;
+
+
+
+$layout-header-height:50px;
+$layout-nav-width: 250px;
+$layout-nav-collapsed-width: 65px;
+$detail-table-height:45px;
+
+// screen
+$screen-md:768px

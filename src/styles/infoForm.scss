@@ -1,0 +1,42 @@
+.page-info{
+  width: 100%;
+  .cell-group{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $border-detail-color;
+    border-right: none;
+    border-bottom: none;
+    .cell {
+      display: flex;
+      font-size: 14px;
+      border-bottom: 1px solid $border-detail-color;
+      .cell_title{
+        width: 150px;
+        text-align: left;
+        border-right: 1px solid $border-detail-color;
+        background-color: $--color-primary-light-9;
+        padding-left: 8px;
+        color: #606266;
+        display: flex;
+        align-items: center;
+        i {
+          margin-left: $padding-xs;
+          cursor: pointer;
+        }
+      }
+      .cell_value {
+        padding-left: 8px;
+        border-right: 1px solid $border-detail-color;
+        min-height: $detail-table-height;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        border-top: none;
+        &:hover{
+          background-color:$detail-hover-bg-color;
+        }
+      }
+    }
+  }
+}
